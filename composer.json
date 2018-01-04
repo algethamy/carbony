@@ -1,0 +1,25 @@
+{
+    "name": "cammac/carbony",
+    "description": "convert from/to Hijri and Gregorian",
+    "type": "library",
+    "require": {
+        "nesbot/carbon": "^1.22"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdullah AlGethami",
+            "email": "abdullah@efront.sa"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cammac\\Carbony\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cammac\\Carbony\\Tests\\": "tests/"
+        }
+    }
+}
