@@ -3,7 +3,7 @@
     "description": "convert from/to Hijri and Gregorian",
     "type": "library",
     "require": {
-        "nesbot/carbon": "^1.22"
+        "nesbot/carbon": "^2.0"
     },
     "license": "MIT",
     "authors": [
