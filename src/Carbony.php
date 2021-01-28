@@ -11,7 +11,7 @@ class Carbony extends Carbon
         $time = new static($time, $tz);
 
         return static::createFromTimestamp(
-            (new Cal())->mktime($time->hour, $time->minute, $time->second, $time->month, $time->day, $time->year)
+            (new Cal())->mktime($time->month, $time->day, $time->year, $time->hour, $time->minute, $time->second)
         );
     }
 

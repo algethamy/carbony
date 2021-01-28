@@ -2667,7 +2667,7 @@ class Cal
      * @author Abdul-Aziz Al-Oraij
      */
     // string mktime ( int hour, int minute, int second, int month, $day, int year )
-    public function mktime($hour = 0, $minute = 0, $second = 0, $month, $day, $year)
+    public function mktime($month, $day, $year, $hour = 0, $minute = 0, $second = 0)
     {
         extract($this->u2g($day, $month, $year));
 
