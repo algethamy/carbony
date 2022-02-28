@@ -3,7 +3,8 @@
     "description": "convert from/to Hijri and Gregorian",
     "type": "library",
     "require": {
-        "nesbot/carbon": "^2.0"
+        "nesbot/carbon": "^2.0",
+        "illuminate/support": ">=5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9"
@@ -18,6 +19,13 @@
     "autoload": {
         "psr-4": {
             "Cammac\\Carbony\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cammac\\Carbony\\CarbonyServiceProvider"
+            ]
         }
     },
     "autoload-dev": {
