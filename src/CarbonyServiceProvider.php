@@ -11,13 +11,13 @@ class CarbonyServiceProvider extends ServiceProvider
         \Carbon\Carbon::macro(
             'hijriParse',
             function (...$args) {
-                return Carbony::hijriParse($args);
+                return Carbony::hijriParse(...$args);
             }
         );
         \Carbon\CarbonImmutable::macro(
             'hijriParse',
             function (...$args) {
-                return CarbonyImmutable::hijriParse($args);
+                return CarbonyImmutable::hijriParse(...$args);
             }
         );
 
